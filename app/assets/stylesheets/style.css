@@ -1,0 +1,78 @@
+/* =============================================================================
+
+	STYLE.CSS
+
+
+============================================================================= */
+
+/* =============================================================================
+HTML - styles
+============================================================================= */
+
+body { background-color: #eaeaea; color: #303030; }
+a { color: #555; }
+    a:hover, a:active, a:focus { color: #8CC53F; }
+#content h2 { color: #0085cc; }
+#content table { border: 2px solid #cfcfcf; }
+    #content table th { border-right: 1px solid #0074B3; background-color: #0085cc; color: #fff; }
+    #content table td { border: 1px solid #cfcfcf; }
+    #content table tr.bg td { background-color: #e8f6ff;}
+#content dl dt { color: #df0000; }
+#content fieldset { border: 1px solid #ccc;}
+#content legend { background: #FFF; color: #0085cc; }
+#content acronym, #content abbr, #content .help { border-bottom: 1px dotted #cfcfcf;}
+
+/* =============================================================================
+HTML - without styles
+============================================================================= */
+
+table.nostyle th, dl.nostyle dt { color: #303030 !important; }
+
+/* =============================================================================
+LAYOUT
+============================================================================= */
+
+#tray { color: #eee; }
+    #tray a, #tray strong { color: #eee; }
+        #tray a:hover, #tray a:active, #tray a:focus { color: #8CC53F; }
+#p-content{background:#fff;padding:1px;}
+#content {background: #fff;min-height:500px; }
+#footer { color: #707070; position: fixed; bottom: 0px; height:40px; background: #333; text-align: center; width: 100%; border-top: solid 1px #ccc; z-index: 3000; }
+    #footer a { color: #777; text-align: center; }
+    #footer p { font-size: 12px; }
+    #footer a:hover, #footer a:active, #footer a:focus { color: #8CC53F; }
+.line-footer { width: 100%; height: 1px; background: #555; clear: both; position: absolute; top: -2px; left: 0; }
+
+/* =============================================================================
+OTHERS
+============================================================================= */
+
+#aside {}
+#aside ul li a { padding-top: 25px; color: #eee; display: block; height: 40px; border-top: solid 1px #777; border-bottom: solid 1px #333;}
+#aside ul li a i {float:left;margin-top:-10px;margin-left:-5px;}
+#aside ul li:last-child a{border-bottom:none;}
+#aside ul li#submenu-active a { background-color: #8CC53F; color: #fff; position:relative;border-top:solid 1px #eee;border-bottom:solid 1px #eee;}
+#aside ul li#submenu-active a:before { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #8CC53F; border-style: solid; border-width: 0 14px 14px; content: ""; height: 0;position:absolute; right: -21px; top: 28px; width: 0; -moz-transform: rotate(90deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(0px, 0px); /* FF3.5+ */ -webkit-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /*Saf3.1+, Chrome*/ -o-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /* Opera 10.5 */ -ms-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /* IE 9 */ transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); }
+#aside ul li a:hover, #aside ul li a:active, #aside ul li a:focus { color: #8cc53f; }
+
+
+#content h1 { background-color: #303030; color: #fff; }
+#content .tabs { border-bottom: 1px solid #cfcfcf; }
+    #content .tabs a { color: #303030; }
+        #content .tabs a span { color: #303030; }
+    #content .tabs .ui-tabs-selected a { color: #fff; }
+        #content .tabs .ui-tabs-selected a span { color: #fff; }
+.high { color: #df0000; }
+.high-bg { background: #FFB; }
+.low { color: #707070; }
+
+/* =============================================================================
+MESSAGES
+============================================================================= */
+
+.msg.warning { border: 2px solid #F2DD8C; background-color: #FFF5CC; }
+    .msg.warning a { color: #df0000; }
+        .msg.warning a:hover, .msg.warning a:active, .msg.warning a:focus { color: #303030; }
+.msg.info { border: 2px solid #B8E2FB; background-color: #E8F6FF; }
+.msg.done { border: 2px solid #BBDF8D; background-color: #EAF7D9; }
+.msg.error { border: 2px solid #FFAEAE; background-color: #FEEBEB; }

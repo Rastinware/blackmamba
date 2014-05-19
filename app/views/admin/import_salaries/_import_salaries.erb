@@ -1,0 +1,18 @@
+<div>
+  <!-- TODO: Use active admin forms inside the .rb file -->
+  <%= form_tag(admin_import_salaries_import_csv_path, :method => :post, :multipart => true) do %>
+    <%= csrf_meta_tag %>
+      <%= render 'shared/year_month_selector' %>
+
+      &nbsp;
+
+      <input type="checkbox" id="delete_previous" name="delete_previous" value="1">
+      <label for="delete_previous">حذف رکوردهای قبلی</label>
+
+      &nbsp;
+
+      <input type="file" name="file">
+
+    <input type="submit" value="Import">
+  <% end %>
+</div>

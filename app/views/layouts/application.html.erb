@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>TCT</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/assets/reset.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/assets/main.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/assets/2col.css" title="2col" />
+    <link rel="alternate stylesheet" media="screen,projection" type="text/css" href="/assets/1col.css" title="1col" />
+    <!--[if lte IE 6]><link rel="stylesheet" media="screen,projection" type="text/css" href="assets/main-ie6.css" /><![endif]-->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="/assets/style.css" />
+    <link href="/assets/font-awesome.css?v=1" rel="stylesheet" />
+
+    <script type="text/javascript" src="/assets/jquery.js?v=1"></script>
+    <script type="text/javascript" src="/assets/switcher.js?v=1"></script>
+    <script type="text/javascript" src="/assets/toggle.js?v=1"></script>
+    <script type="text/javascript" src="/assets/ui.core.js?v=1"></script>
+
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+
+</head>
+<body>
+    <div id="main">
+        <div id="tray" class="box">
+            <div class="f-left box">
+                <div class="logo"></div>
+            </div>
+            <p class="f-right">
+                <%= render 'shared/user_info'%>
+            </p>
+        </div>
+        <div class="line-top"></div>
+        <div id="cols" class="box">
+            <div id="aside" class="box">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home fa-3x"></i>&nbsp;&nbsp; MFA Home</a></li>
+                    <li id="submenu-active"><a href="#"><i class="fa fa-key fa-3x"></i>&nbsp;&nbsp; Get/Reset Token</a></li>
+                    <li><a href="#"><i class="fa fa-bar-chart-o fa-3x"></i>&nbsp;&nbsp; Statistics</a></li>
+                    <li><a href="#"><i class="fa fa-code fa-3x"></i>&nbsp;&nbsp; Development </a></li>
+                    <li><a href="#"><i class="fa fa-stethoscope fa-3x"></i>&nbsp;&nbsp; Service Health Monitor</a></li>
+                    <li><a href="#"><i class="fa fa-book fa-3x"></i>&nbsp;&nbsp; Documentation</a></li>
+                    <li><a href="#"><i class="fa fa-bullhorn fa-3x"></i>&nbsp;&nbsp; Blog</a></li>
+                    <li><a href="#"><i class="fa fa-phone fa-3x"></i>&nbsp;&nbsp; Contact</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div id="p-content" class="box">
+            <div id="content" class="box">
+                <%= yield %>
+            </div>
+           </div>
+        </div>
+        <div id="footer" class="box">
+            <div class="line-footer"></div>
+            <p>&copy; 2014 <a href="www.tct.com">TCT</a>, All Rights Reserved &reg;</p>
+        </div>
+    </div>
+</body>
+</html>

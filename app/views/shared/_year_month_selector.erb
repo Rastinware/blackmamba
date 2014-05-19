@@ -1,0 +1,13 @@
+<% jdate = JalaliDate.new(Date.today) %>
+
+<select name="year">
+  <% (jdate.year - 5 .. jdate.year + 5).each do |year| %>
+    <option value="<%=year%>" <%= 'selected' if year == jdate.year %>><%=year%></option>
+  <% end %> 
+</select>
+
+<select name="month">
+  <% (1..12).each do |month| %>
+    <option value="<%=month%>" <%= 'selected' if month == jdate.month %>><%=JalaliDate::PERSIAN_MONTH_NAMES[month]%></option>
+  <% end %>
+</select>
