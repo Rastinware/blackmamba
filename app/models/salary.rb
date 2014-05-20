@@ -1,7 +1,12 @@
 class Salary < ActiveRecord::Base
   require 'csv'
-
   belongs_to :personnel
+
+  self.per_page = 10
+
+  def persian_month 
+    JalaliDate::PERSIAN_MONTH_NAMES[month]
+  end
 
   def self.import(delete_previous, year, month, file)
 

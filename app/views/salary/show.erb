@@ -1,0 +1,328 @@
+<div id="salary-view">
+  <div class="panel">
+    <div class="salary-logo"> 
+      
+    </div>
+    <div class="header-container">
+      <div class="header-title">
+        شرکت خدمات اول TCT
+      </div>
+      <div class="header-subtitle">
+        <span>
+          فیش حقوق ماه
+        </span>
+        <span>
+          <%=@salary.persian_month%>
+        </span>
+        <span>
+          سال
+          <%=@salary.year%>
+        </span>
+      </div>        
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  
+  <div class="top-info panel">
+    <span>
+      <strong>کد پرسنلی:</strong>
+      <%=@salary.personnel.code%>
+    </span>
+    <span>
+      <strong>نام و نام خانوادگی:</strong>
+      <%=@salary.personnel.first_name%> <%=@salary.personnel.last_name%>
+    </span>
+    <span>
+      <strong>مرکز هزینه:</strong>
+      دفتر مرکزی
+    </span>
+  </div>
+
+  <div class="content">
+    <div class="panel column top">
+      <div class="section inner-header">
+        کارکرد
+      </div>
+      <div class="section top-section">
+        <div class="column-field">
+          <div class="label">
+            کارکرد عادی
+          </div>
+          <div class="value">
+             <%=@salary.normal_work%> روز
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            ساعت اضافه کاری
+          </div>
+          <div class="value">
+             <%=@salary.extra_work%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            کارکرد موثر
+          </div>
+          <div class="value">
+             <%=@salary.efficient_work%> روز
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section inner-header">
+        مرخصی
+      </div>
+      <div>
+
+        <div class="column-field">
+          <div class="label">
+            استفاده شده
+          </div>
+          <div class="value">
+             <%=@salary.off_work%> ساعت
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel column top">
+      <div class="section inner-header">
+        مزایا
+      </div>
+      <div>
+        <div class="column-field">
+          <div class="label">
+            حقوق پایه
+          </div>
+          <div class="value">
+             <%=@salary.incomes_base_salary%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            اضافه کاری
+          </div>
+          <div class="value">
+             <%=@salary.incomes_extra_work%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            حق مسکن
+          </div>
+          <div class="value">
+             <%=@salary.incomes_housing%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            بن کارگری
+          </div>
+          <div class="value">
+             <%=@salary.incomes_worker_subsidizes%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            پاداش بهره وری
+          </div>
+          <div class="value">
+             <%=@salary.incomes_productivity_bonuses%>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="panel column top">
+      <div class="section inner-header">
+        کسور
+      </div>
+      <div>
+
+        <div class="column-field">
+          <div class="label">
+            بیمه
+          </div>
+          <div class="value">
+             <%=@salary.reductions_insurance%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            مالیات
+          </div>
+          <div class="value">
+             <%=@salary.reductions_tax%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            روند ماه جاری
+          </div>
+          <div class="value">
+             <%=@salary.reductions_current_month%>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="panel column top">
+      <div class="section inner-header">
+        وام
+      </div>
+      <div class="section loan-header">
+        <span>
+          نام وام
+        </span>
+        <span>
+          مبلغ قسط
+        </span>
+        <span>
+          مانده
+        </span>
+        <div class="clearfix"></div>
+      </div>
+      <div class="section loan-content top-section">
+      
+        <!--
+        <span>
+          نام وام
+        </span>
+        <span>
+          مبلغ قسط
+        </span>
+        <span>
+          مانده
+        </span>
+        -->
+      </div>
+
+      <div>
+
+        <div class="column-field">
+          <div class="label">
+            حقوق پایه
+          </div>
+          <div class="value">
+             <%=@salary.base_salary%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            درآمد مستمر ماه
+          </div>
+          <div class="value">
+             <%=@salary.continuous_monthly_income%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            درآمد سال تا به حال
+          </div>
+          <div class="value">
+             <%=@salary.aggregated_yearly_income%>
+          </div>
+        </div>
+
+        <div class="column-field">
+          <div class="label">
+            مالیات سال تا به حال
+          </div>
+          <div class="value">
+             <%=@salary.aggregated_yearly_tax%>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="panel column net-payment"></div>
+
+    <div class="panel column border">
+
+        <div class="column-field">
+          <div class="label">
+            جمع مزایا
+          </div>
+          <div class="value">
+             <%=@salary.total_income%>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="panel column border">
+
+        <div class="column-field">
+          <div class="label">
+            جمع کسور
+          </div>
+          <div class="value">
+             <%=@salary.total_reduction%>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="panel column border">
+
+        <div class="column-field">
+          <div class="small-label">
+            شماره حساب
+          </div>
+          <div class="value">
+             <%=@salary.personnel.acc_no%>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="clearfix"></div>    
+
+    <div>
+      <div class="panel column net-payment">
+        خالص پرداختی
+      </div>
+    </div>
+    <div class="panel column border net-payment-value">
+       <%=@salary.net_payment%>
+    </div>
+
+    <div class="panel column"></div>
+
+    <div class="panel column border">
+        <div class="column-field">
+          <div class="label">
+            شماره بیمه تامین اجتماعی
+          </div>
+          <div class="value">
+             <%=@salary.personnel.insurance_no%>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="clearfix"></div>    
+
+  </div>
+</div>
+
+<div class="command-panel">
+  <%= link_to "بازگشت", salary_index_path %>
+</div>

@@ -1,1 +1,39 @@
-Hi there
+<table class="width100">
+  <tr>
+    <th>
+      سال
+    </th>
+    <th>
+      ماه      
+    </th>
+    <th>
+      کد پرسنلی
+    </th>
+    <th>
+      خالص پرداختی
+    </th>
+    <th>
+    </th>
+  </tr>
+  <% @salaries.each do |item| %>
+  <tr>
+    <td>
+      <%= item.year %>
+    </td>
+    <td>
+      <%= item.persian_month %>
+    </td>
+    <td>
+      <%= item.personnel.code %>
+    </td>
+    <td>
+      <%= number_to_currency(item.net_payment, unit: "", precision: 0) %>
+    </td>
+    <td>
+      <%= link_to "مشاهده", salary_path(item.id) %>
+    </td>
+  </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @salaries, :previous_label => 'قبلی', :next_label => 'بعدی' %>
