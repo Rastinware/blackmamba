@@ -1,6 +1,6 @@
 <% if personnel_signed_in? %>
-    User: <strong><a href="#"><%= current_personnel.full_name%></a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    کاربر: <strong><a href="#"><%= current_personnel.full_name%></a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
     <strong>
-        <%=link_to 'Sign out', destroy_personnel_session_path, :method => :delete %>
+        <%=link_to 'خروج', destroy_personnel_session_path, :method => :delete %>
     </strong>
 <% end %>

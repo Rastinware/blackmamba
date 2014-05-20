@@ -1,6 +1,6 @@
 /* =============================================================================
 
-	STYLE.CSS
+    STYLE.CSS
 
 
 ============================================================================= */
@@ -9,12 +9,12 @@
 HTML - styles
 ============================================================================= */
 
-body { background-color: #eaeaea; color: #303030; }
+body { background-color: #eaeaea; color: #303030; direction: rtl; }
 a { color: #555; }
     a:hover, a:active, a:focus { color: #8CC53F; }
 #content h2 { color: #0085cc; }
 #content table { border: 2px solid #cfcfcf; }
-    #content table th { border-right: 1px solid #0074B3; background-color: #0085cc; color: #fff; }
+    #content table th { border-left: 1px solid #0074B3; background-color: #0085cc; color: #fff; }
     #content table td { border: 1px solid #cfcfcf; }
     #content table tr.bg td { background-color: #e8f6ff;}
 #content dl dt { color: #df0000; }
@@ -41,7 +41,7 @@ LAYOUT
     #footer a { color: #777; text-align: center; }
     #footer p { font-size: 12px; }
     #footer a:hover, #footer a:active, #footer a:focus { color: #8CC53F; }
-.line-footer { width: 100%; height: 1px; background: #555; clear: both; position: absolute; top: -2px; left: 0; }
+.line-footer { width: 100%; height: 1px; background: #555; clear: both; position: absolute; top: -2px; right: 0; }
 
 /* =============================================================================
 OTHERS
@@ -49,10 +49,10 @@ OTHERS
 
 #aside {}
 #aside ul li a { padding-top: 25px; color: #eee; display: block; height: 40px; border-top: solid 1px #777; border-bottom: solid 1px #333;}
-#aside ul li a i {float:left;margin-top:-10px;margin-left:-5px;}
+#aside ul li a i {float:right;margin-top:-10px;margin-right:-5px;}
 #aside ul li:last-child a{border-bottom:none;}
 #aside ul li#submenu-active a { background-color: #8CC53F; color: #fff; position:relative;border-top:solid 1px #eee;border-bottom:solid 1px #eee;}
-#aside ul li#submenu-active a:before { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #8CC53F; border-style: solid; border-width: 0 14px 14px; content: ""; height: 0;position:absolute; right: -21px; top: 28px; width: 0; -moz-transform: rotate(90deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(0px, 0px); /* FF3.5+ */ -webkit-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /*Saf3.1+, Chrome*/ -o-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /* Opera 10.5 */ -ms-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /* IE 9 */ transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); }
+#aside ul li#submenu-active a:before { border-color: #8CC53F transparent transparent; border-style: solid; border-width: 14px 14px 0 14px; content: ""; height: 0;position:absolute; left: -21px; top: 28px; width: 0; -moz-transform: rotate(90deg) scale(1, 1) skewX(0deg) skewY(0deg) translate(0px, 0px); /* FF3.5+ */ -webkit-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /*Saf3.1+, Chrome*/ -o-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /* Opera 10.5 */ -ms-transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); /* IE 9 */ transform: rotate(90deg) scale(1, 1) skew(0deg, 0deg) translate(0px, 0px); }
 #aside ul li a:hover, #aside ul li a:active, #aside ul li a:focus { color: #8cc53f; }
 
 
