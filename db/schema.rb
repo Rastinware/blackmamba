@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140524080939) do
+ActiveRecord::Schema.define(version: 20140516135816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -111,9 +111,11 @@ ActiveRecord::Schema.define(version: 20140524080939) do
     t.decimal  "total_income"
     t.decimal  "total_reduction"
     t.decimal  "net_payment"
+    t.boolean  "salaries",                     default: false, null: false
+    t.boolean  "is_read",                      default: false, null: false
+    t.boolean  "boolean",                      default: false, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "is_read",                      default: false, null: false
   end
 
   add_index "salaries", ["personnel_id"], name: "index_salaries_on_personnel_id", using: :btree

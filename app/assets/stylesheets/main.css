@@ -84,7 +84,7 @@ OTHERS
 #aside #logo img {display:block; width:200px;}
 #aside ul {width:215px; margin:0 0 15px 0; list-style:none;}
 #aside ul li {display:inline;}
-#aside ul li a {display:block; width:185px; padding:4px 15px; text-decoration:none;}
+#aside ul li a {display:block; width:185px; padding:4px 15px; text-decoration:none; font-size: 1.2em; }
 #aside ul li#submenu-active a { z-index:999;position:relative}
 
 #content .col50 {float:right; width:49%;}

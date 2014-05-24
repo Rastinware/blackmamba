@@ -35,6 +35,8 @@ class CreateSalaries < ActiveRecord::Migration
       t.decimal :total_reduction
       t.decimal :net_payment
 
+      t.boolean :salaries, :is_read, :boolean, :null => false, :default => false
+
       t.timestamps
     end
   end
