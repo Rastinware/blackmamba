@@ -16,7 +16,7 @@
     </th>
   </tr>
   <% @salaries.each do |item| %>
-  <tr>
+  <tr <%= raw(item.is_read == false ? "class='unread'" : "") %>>
     <td>
       <%= item.year %>
     </td>
