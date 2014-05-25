@@ -1,0 +1,345 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+"fa":
+  views:
+    pagination:
+      first: "&laquo; اولین"
+      last: "آخرین &raquo;"
+      previous: "&lsaquo; قبلی"
+      next: "بعدی &rsaquo;"
+      truncate: "&hellip;"
+  activerecord:
+    attributes:
+      personnel:
+        email: "ایمیل"
+        password: "کلمه عبور"
+        remember_me: "مرا به خاطر بسپار"
+  active_admin:
+    dashboard: "داشبرد"
+    dashboard_welcome:
+      welcome: "به اکتیو ادمین خوش آمدید. این صفحه اول داشبرد است."
+      call_to_action: "برای اضافه کردن قسمت‌هایی به داشبرد اینجا را چک کنید: 'app/admin/dashboard.rb'"
+    view: "نمایش"
+    edit: "ویرایش"
+    delete: "حذف"
+    delete_confirmation: "آیا برای حذف این آیتم اطمینان دارید؟"
+    new_model: "%{model} جدید"
+    create_model: "%{model} جدید"
+    edit_model: "ویرایش %{model}"
+    update_model: "ویرایش %{model}"
+    delete_model: "حذف %{model}"
+    details: "جزئیات %{model}"
+    cancel: "لغو"
+    empty: "خالی"
+    previous: "قبلی"
+    next: "بعدی"
+    download: "دریافت:"
+    has_many_new: "اضافه کردن %{model} جدید"
+    has_many_delete: "حذف"
+    has_many_remove: "حذف"
+    filters:
+      buttons:
+        filter: "فیلتر"
+        clear: "پاک کردن فیلتر"
+      predicates:
+        contains: "شامل"
+        equals: "برابر با"
+        starts_with: "شروع با"
+        ends_with: "پایان با"
+        greater_than: "بزرگتر از"
+        less_than: "کوچکتر از"
+    main_content: "لطفا %{model}#main_content را پیاده سازی کنید تا محتوی نمایش داده شود."
+    logout: "خروج"
+    powered_by: "قدرت گرفته از %{active_admin} %{version}"
+    sidebars:
+      filters: "فیلتر‌ها"
+    pagination:
+      empty: "هیچ رکورد %{model} یافت نشد"
+      one: "نمایش <b>1</b> %{model}"
+      one_page: "نمایش <b>همه %{n}</b> %{model}"
+      multiple: "نمایش %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> از کل <b>%{total}</b> رکورد"
+      multiple_without_total: "نمایش %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+      entry:
+        one: "آیتم"
+        other: "آیتم‌ها"
+    any: "هرکدام"
+    blank_slate:
+      content: "هنوز هیچ رکوردی از %{resource_name} درج نشده."
+      link: "درج اولین رکورد"
+    dropdown_actions:
+      button_label: "عملیات"
+    batch_actions:
+      button_label: "عملیات‌های دسته‌ای"
+      default_confirmation: "آیا برای اجرای این عملیات اطمینان دارید؟"
+      delete_confirmation: "آیا برای حذف همه رکوردهای %{plural_model} اطمینان دارید؟"
+      succesfully_destroyed:
+        one: "1 %{model} با موفقیت حذف شد"
+        other: "%{count} %{plural_model} با موفقت حذف شدند."
+      selection_toggle_explanation: "(انتخاب‌ها برعکس شوند)"
+      link: "ایجاد یک رکورد جدید"
+      action_label: "%{title} انتخاب شده است"
+      labels:
+        destroy: "حذف"
+    comments:
+      resource_type: "نوع رکورد"
+      author_type: "نوع ایجاد کننده"
+      body: "بدنه"
+      author: "ایجاد کننده"
+      title: "کامنت"
+      add: "افزودن کامنت"
+      resource: "رکورد"
+      no_comments_yet: "هنوز هیچ کامنتی نوشته نشده."
+      author_missing: "بی‌نام"
+      title_content: "کامنت‌ها (%{count})"
+      errors:
+        empty_text: "کامنت درج نشد، متن کامنت خالی بود."
+    devise:
+      username:
+        title: "نام کاربری"
+      email:
+        title: "ایمیل"
+      subdomain:
+        title: "Subdomain"
+      password:
+        title: "کلمه‌عبور"
+      sign_up:
+        title: "ثبت‌نام"
+        submit: "ثبت‌نام"
+      login:
+        title: "ورود"
+        remember_me: "مرا به خاطر بسپار"
+        submit: "ورود"
+      reset_password:
+        title: "کلمه عبور را فراموش کرده‌اید؟"
+        submit: "دریافت کلمه عبور جدید"
+      change_password:
+        title: "تغییر کلمه عبور"
+        submit: "تغییر کلمه عبور"
+      unlock:
+        title: "ارسال مجدد دستورالعمل بازگشایی حساب کاربری"
+        submit: "ارسال مجدد دستورالعمل بازگشایی حساب کاربری"
+      resend_confirmation_instructions:
+        title: "ارسال مجدد تاییدیه ایمیل"
+        submit: "ارسال مجدد تاییدیه ایمیل"
+      links:
+        sign_in: "ورود"
+        forgot_your_password: "کلمه عبور را فراموش کرده‌اید؟"
+        sign_in_with_omniauth_provider: "ورود با حساب %{provider}"
+    access_denied:
+      message: "شما دسترسی لازم برای انجام این عملیات را ندارید."
+    index_list:
+      table: "جدول"
+      block: "لیست"
+      grid: "گرید"
+      blog: "وبلاگ"
+
+    date:
+    abbr_day_names:
+    - ی
+    - د
+    - س
+    - چ
+    - پ
+    - ج
+    - ش
+    abbr_month_names:
+    -
+    - ژانویه
+    - فوریه
+    - مارس
+    - آوریل
+    - مه
+    - ژوئن
+    - ژوئیه
+    - اوت
+    - سپتامبر
+    - اکتبر
+    - نوامبر
+    - دسامبر
+    day_names:
+    - یکشنبه
+    - دوشنبه
+    - سه‌شنبه
+    - چهارشنبه
+    - پنج‌شنبه
+    - جمعه
+    - شنبه
+    formats:
+      default: ! '%Y/%m/%d'
+      long: ! '%e %B %Y'
+      short: ! '%m/%d'
+    month_names:
+    -
+    - ژانویه
+    - فوریه
+    - مارس
+    - آوریل
+    - مه
+    - ژوئن
+    - ژوئیه
+    - اوت
+    - سپتامبر
+    - اکتبر
+    - نوامبر
+    - دسامبر
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: حدود یک ساعت
+        other: حدود %{count} ساعت
+      about_x_months:
+        one: حدود یک ماه
+        other: حدود %{count} ماه
+      about_x_years:
+        one: حدود یک سال
+        other: حدود %{count} سال
+      almost_x_years:
+        one: حدود یک سال
+        other: حدود %{count} سال
+      half_a_minute: نیم دقیقه
+      less_than_x_minutes:
+        one: کمتر از یک دقیقه
+        other: کمتر از %{count} دقیقه
+      less_than_x_seconds:
+        one: یک ثانیه
+        other: کمتر  از %{count} ثانیه
+      over_x_years:
+        one: بیش از یک سال
+        other: بیش از %{count} سال
+      x_days:
+        one: یک روز
+        other: ! '%{count} روز'
+      x_minutes:
+        one: یک دقیقه
+        other: ! '%{count} دقیقه'
+      x_months:
+        one: یک ماه
+        other: ! '%{count} ماه'
+      x_seconds:
+        one: یک ثانیه
+        other: ! '%{count} ثانیه'
+    prompts:
+      day: روز
+      hour: ساعت
+      minute: دقیقه
+      month: ماه
+      second: ثانیه
+      year: سال
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: باید پذیرفته شود
+      blank: نباید خالی باشد
+      confirmation: با تایید نمی‌خواند
+      empty: نمی‌تواند خالی باشد
+      equal_to: باید برابر %{count} باشد
+      even: باید زوج باشد
+      exclusion: رزرو است
+      greater_than: باید بزرگتر از %{count} باشد
+      greater_than_or_equal_to: باید بزرگتر یا برابر %{count} باشد
+      inclusion: در لیست موجود نیست
+      invalid: نامعتبر است
+      less_than: باید کمتر از %{count} باشد
+      less_than_or_equal_to: باید کمتر یا برابر %{count} باشد
+      not_a_number: عدد نیست
+      not_an_integer: عدد صحیح نیست
+      odd: باید فرد باشد
+      record_invalid: رکورد نامعتبر است %{errors}
+      taken: پیشتر گرفته شده
+      too_long: بلند است (حداکثر %{count} کاراکتر)
+      too_short: کوتاه است (حداقل %{count} کاراکتر)
+      wrong_length: نااندازه است (باید %{count} کاراکتر باشد)
+    template:
+      body: ! 'موارد زیر مشکل داشت:'
+      header:
+        one: 1 خطا جلوی ذخیره این %{model} را گرفت
+        other: ! '%{count} خطا جلوی ذخیره این %{model} را گرفت'
+  helpers:
+    select:
+      prompt: لطفا انتخاب کنید
+    submit:
+      create: ! 'ایجاد %{model}'
+      submit: ! 'ذخیره‌ی %{model}'
+      update: ! 'بروز رسانی %{model}'
+  number:
+    currency:
+      format:
+        delimiter: ٬
+        format: ! '%n %u'
+        precision: 0
+        separator: ٫
+        significant: false
+        strip_insignificant_zeros: false
+        unit: ﷼
+    format:
+      delimiter: ٬
+      precision: 2
+      separator: ٫
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: میلیارد
+          million: میلیون
+          quadrillion: کادریلیون
+          thousand: هزار
+          trillion: تریلیون
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: بایت
+            other: بایت
+          gb: گیگابایت
+          kb: کیلوبایت
+          mb: مگابایت
+          tb: ترابایت
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' و '
+      two_words_connector: ! ' و '
+      words_connector: ! '، '
+  time:
+    am: قبل از ظهر
+    formats:
+      default: ! '%A، %e %B %Y، ساعت %H:%M:%S (%Z)'
+      long: ! '%e %B %Y، ساعت %H:%M'
+      short: ! '%e %B، ساعت %H:%M'
+    pm: بعد از ظهر

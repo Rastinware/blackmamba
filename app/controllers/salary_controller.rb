@@ -1,7 +1,7 @@
 class SalaryController < ApplicationController
   before_action :authenticate_personnel!
   def index
-    @salaries = Salary.order("month").order("year").order("is_read").paginate(:page => params[:page])
+    @salaries = Salary.order("month").order("year").order("is_read").page params[:page]
   end
 
   def show    
